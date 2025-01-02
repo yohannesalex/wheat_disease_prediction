@@ -1,4 +1,4 @@
-import 'package:face_recognition/welcome.dart';
+import 'package:wheat_rust_prediction/welcome.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';

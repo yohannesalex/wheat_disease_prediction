@@ -6,7 +6,7 @@
 
 
     <application
-        android:label="face_recognition"
+        android:label="wheat_rust_prediction"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:hardwareAccelerated="true"> <!-- Ensure consistent setting -->
