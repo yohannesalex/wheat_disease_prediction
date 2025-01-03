@@ -73,11 +73,12 @@ class _WheatRustDetectionState extends State<WheatRustDetection> {
         for (int j = 0; j < imgSize; j++) {
           final pixel = resizedImage.getPixel(j, i);
           final index = (i * imgSize + j) * 3;
-          inputBuffer[index] = img.getRed(pixel).toDouble() / 255.0;
+          inputBuffer[index] = img.getBlue(pixel).toDouble() / 255.0;
           inputBuffer[index + 1] = img.getGreen(pixel).toDouble() / 255.0;
-          inputBuffer[index + 2] = img.getBlue(pixel).toDouble() / 255.0;
+          inputBuffer[index + 2] = img.getRed(pixel).toDouble() / 255.0;
         }
       }
+
 
       // Define the output buffer (1x4 for this model)
       final outputBuffer = Float32List(4).reshape([1, 4]);
