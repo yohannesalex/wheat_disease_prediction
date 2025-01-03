@@ -79,7 +79,6 @@ class _WheatRustDetectionState extends State<WheatRustDetection> {
         }
       }
 
-
       // Define the output buffer (1x4 for this model)
       final outputBuffer = Float32List(4).reshape([1, 4]);
 
@@ -183,6 +182,22 @@ class _WheatRustDetectionState extends State<WheatRustDetection> {
                       label: const Text("Gallery"),
                     ),
                   ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Center(
+                    child: Column(
+                      children: [
+                        const SizedBox(height: 20),
+                        Text(
+                          "Note: This model has 83% accuracy sometimes may not be accurate!.",
+                          style: TextStyle(
+                              color: const Color.fromARGB(221, 3, 8, 100),
+                              fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               ],
             ),
